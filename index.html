@@ -51,7 +51,7 @@
         <h1 id="res"></h1>
     </form>
     <h1 id="res"></h1>
-    <input style="display:block; margin:auto;" class="btn btn-primary" type="button" onclick="printDiv();return false;" value="Save"/>
+    <input id="savebtn" style="display:block; margin:auto;" class="btn btn-primary" type="button" onclick="printDiv();return false;" value="Save"/>
     <br>
 
     <div id="table">
@@ -448,11 +448,9 @@
                 document.getElementById("myTable").className = "table table-sm table-responsive table-bordered";
                 document.getElementById("head").style.fontSize = "medium";
                 document.getElementById("head").style.padding = "0px";
-                document.getElementById("head2").style.fontSize = "medium";
-                document.getElementById("head2").style.padding = "0px";
                 document.getElementById("form1").style.display = "none";
-                document.getElementById("form2").style.display = "none";
                 document.getElementById("names").style.display = "none";
+                document.getElementById("savebtn").style.display = "none";
                 document.getElementById("vote").style.display = "none";
                 document.getElementById("foot").style.textAlign = "left";
                 // document.getElementById("foot").style.display = "block";
